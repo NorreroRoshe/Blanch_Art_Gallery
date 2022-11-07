@@ -1,0 +1,4037 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blanchard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/choices.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- <nav id="menu" class="menu is-active">
+          <ul class="header__nav-berger">
+            <li class="header__nav-iberger">
+              <a href="#" class="header__nav-links">О нас</a>
+            </li>
+            <li class="header__nav-iberger">
+              <a href="#" class="header__nav-links">Проекты</a>
+            </li>
+            <li class="header__nav-iberger">
+              <a href="#" class="header__nav-links">Этапы</a>
+            </li>
+            <li class="header__nav-iberger">
+              <a href="#" class="header__nav-links">Отзывы</a>
+            </li>
+            <li class="header__nav-iberger">
+              <a href="#" class="header__nav-links">Контакты</a>
+            </li>
+            <li class="header__nav-iberger header__nav-iberger1">
+              <span class="nav-search-bur-des">Поиск</span>
+              <button class="header__nav-search-bur"></button>
+            </li>
+          </ul>
+        </nav>
+        <button aria-label="Открыть меню" id="burger" class="burger__header">
+          <span class="burger__line"></span>
+        </button> -->
+      <div class="header__top">
+        <div class="container header__container">
+          <a href="#" class="header__logo">
+            <img src="img/XGG.svg" alt="">
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#about" class="header__nav-link"> О&nbsp;нас</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Галерея</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Каталог</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">События</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Издания</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Проекты</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__signin">
+            <a href="#" class="header__signin-icon"></a>
+            <a href="#" class="header__signin-desc">Войти</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container header__container">
+            <!-- <ul class="hero__nav-list">
+              <li class="hero__nav-item">
+                <a href="#about" class="hero__nav-link"> Реализм</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#" class="hero__nav-link">Импрессионизм</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#" class="hero__nav-link">Постимпрессионизм</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#" class="hero__nav-link">Авангард</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#" class="hero__nav-link">Футуризм</a>
+              </li>
+            </ul> -->
+            <ul class="header__list">
+              <li class="header__item">
+                <button class="header__item-btn" data-pith="one">
+                  <strong class="header__item-heading">Реализм</strong>
+                  <span class="header__item-icon"></span>
+                </button>
+                <div class="header__dropdown" data-tirget="one">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__item-tintoretto">Тинторрето</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__item-fridrih">Фридрих</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__item-leo">Леонардо</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__item-verokko">Верроккьо</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__item-tintoretto">Тинторрето</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__item-tintoretto">Тинторрето</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__item">
+                <button class="header__item-btn" data-pith="two">
+                  <strong class="header__item-heading">Импрессионизм</strong>
+                  <span class="header__item-icon"></span>
+                </button>
+                <div class="header__dropdown" data-tirget="two">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-mone">Моне</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-sisle">Сислей</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-mane">Мане</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-renuar">Ренуар</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-tintoretto">Тинторрето</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-tintoretto">Тинторрето</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__item">
+                <button class="header__item-btn" data-pith="three">
+                  <strong class="header__item-heading">Постимпрессионизм</strong>
+                  <span class="header__item-icon"></span>
+                </button>
+                <div class="header__dropdown" data-tirget="three">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-vangog">Ван Гог</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-sezan">Сезанн</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-gogen">Гоген</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-sera">Сёра</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-tintoretto">Сёра</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-tintoretto">Сёра</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__item">
+                <button class="header__item-btn" data-pith="four">
+                  <strong class="header__item-heading">Авангард</strong>
+                  <span class="header__item-icon"></span>
+                </button>
+                <div class="header__dropdown" data-tirget="four">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-kandinsk">Кандинский</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-marin">Маринетти</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-malevich">Малевич</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-pika">Пикассо</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-tintoretto">Пикассо</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-tintoretto">Пикассо</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__item">
+                <button class="header__item-btn" data-pith="five">
+                  <strong class="header__item-heading">Футуризм</strong>
+                  <span class="header__item-icon"></span>
+                </button>
+                <div class="header__dropdown" data-tirget="five">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-kapap">Карра</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-pratell">Прателла</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-severin">Северини</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-balla">Балла</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-tintoretto">Балла</a></li>
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__link-tintoretto">Балла</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="hero__search">
+              <span class="hero__search-icon"></span>
+              <label class="hero__search-label">
+                <input type="text" class="hero__search-input" placeholder="Поиск по сайту" />
+              </label>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <h1 class="visually-hidden">Blanchard - художественная галерея</h1>
+        <div class="hero__fake-container"></div>
+        <div class="hero__fade-container">
+          <div class="hero__fade-slide"></div>
+          <div class="hero__fade-slide"></div>
+          <div class="hero__fade-slide"></div>
+          <div class="hero__fade-slide"></div>
+          <div class="hero__fade-slide"></div>
+          <div class="hero__fade-slide"></div>
+        </div>
+
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h2 class="hero__heading">Прикоснитесь к&nbsp;прекрасному</h2>
+            <p class="hero__description">
+              Мы вынуждены отталкиваться от того, что реализация намеченных
+              плановых заданий создаёт предпосылки для новых предложений.
+            </p>
+            <button class="hero__btn">Подписаться на рассылку</button>
+          </div>
+          <!-- <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide banner__1"></div>
+            <div class="swiper-slide banner__2"></div>
+            <div class="swiper-slide banner__3"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+        </div>
+      </section>
+      <section class="section-about">
+        <div class="container about__container">
+          <div class="about__content">
+            <h3 class="about__heading blanchard__heading">О нас</h3>
+            <p class="about__description">
+              Ясность нашей позиции очевидна: семантический разбор внешних
+              противодействий однозначно определяет каждого участника как
+              способного принимать собственные решения касаемо распределения
+              внутренних резервов и ресурсов. Не следует, однако, забывать, что
+              высококачественный прототип будущего проекта влечет за собой
+              процесс внедрения и модернизации модели развития. Повседневная
+              практика показывает, что высокое качество позиционных исследований
+              создаёт необходимость включения в производственный план целого
+              ряда внеочередных мероприятий с учётом комплекса распределения
+              внутренних резервов и ресурсов. В рамках спецификации современных
+              стандартов, действия представителей оппозиции набирают
+              популярность среди определенных слоев населения, а значит, должны
+              быть разоблачены.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-gallery">
+        <div class="container gallery__container">
+          <div class="gallery__content">
+            <div class="gallery__content-left">
+              <div class="gallery__content-left__up">
+                <h3 class="gallery__heading blanchard__heading">Галерея</h3>
+                <span class="gallery__filtr">Фильтр:</span>
+                <select name="select" id="default" class="gallery__select">
+                  <option value="">Живопись</option>
+                  <option value="Рисунок">Рисунок</option>
+                  <option value="Культура">Культура</option>
+                </select>
+              </div>
+              <div class="gallery__content-left__down">
+                Вам предоставляется 10 бесплатных скачиваний. Для увеличения
+                количества скачиваний
+                <a href="" class="gallery__content-left__link">авторизуйтесь </a
+                >, либо воспользуйтесь лицензией.
+              </div>
+            </div>
+            <div class="gallery__content-right">
+              <div class="gallery-btns">
+                <!-- If we need navigation buttons -->
+                <button class="gallery-button-prev">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                      fill="#666666"
+                    />
+                    <path d="M16 20L11 15L16 10" stroke="white" />
+                  </svg>
+                </button>
+                <div class="gallery-pagination"></div>
+                <button class="gallery-button-next">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                      fill="#666666"
+                    />
+                    <path d="M14 20L19 15L14 10" stroke="white" />
+                  </svg>
+                </button>
+              </div>
+              <div class="gallery__swiper gallery-swiper swiper">
+                <ul class="swiper-wrapper gallery-swiper__wrapper">
+                  <!-- Slides -->
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="one">
+                      <img src="img/gal1.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="two">
+                      <img src="img/gal4.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="three">
+                      <img src="img/gal2.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="four">
+                      <img src="img/gal5.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="five">
+                      <img src="img/gal3.png" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="six">
+                      <img src="img/gal6.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="seven">
+                      <img src="img/gal7.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="eight">
+                      <img src="img/gal10.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="nine">
+                      <img src="img/gal8.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="ten">
+                      <img src="img/gal11.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="eleven">
+                      <img src="img/gal9.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="twelve">
+                      <img src="img/gal12.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="therteen">
+                      <img src="img/gal13.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="fourteen">
+                      <img src="img/gal16.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="fiveteen">
+                      <img src="img/gal14.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="sixteen">
+                      <img src="img/gal17.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="seventeen">
+                      <img src="img/gal15.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="eighteen">
+                      <img src="img/gal18.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="nineteen">
+                      <img src="img/gal19.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="twenty">
+                      <img src="img/gal22.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="twentyone">
+                      <img src="img/gal20.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="twentytwo">
+                      <img src="img/gal23.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button
+                      class="gallery-swiper__image"
+                      data-but="twentythree"
+                    >
+                      <img src="img/gal21.jpg" alt="первый" />
+                    </button>
+                  </li>
+                  <li class="swiper-slide gallery-swiper__slide">
+                    <button class="gallery-swiper__image" data-but="twentyfour">
+                      <img src="img/gal24.jpg" alt="первый" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-catalog">
+        <div class="container catalog__container">
+          <div class="catalog__content">
+            <div class="catalog__country">
+              <h3 class="catalog__heading blanchard__heading">Каталог</h3>
+              <ul class="catalog__contry-list">
+                <li class="catalog__contry-items">
+                  <div class="catalog__contry-item fr" data-path="one"></div>
+                </li>
+                <li class="catalog__contry-items">
+                  <span class="catalog__contry-item ger" data-path="two"></span>
+                </li>
+                <li class="catalog__contry-items">
+                  <span
+                    class="catalog__contry-item it is-active"
+                    data-path="three"
+                  ></span>
+                </li>
+                <li class="catalog__contry-items">
+                  <span
+                    class="catalog__contry-item Rus"
+                    data-path="four"
+                  ></span>
+                </li>
+                <li class="catalog__contry-items">
+                  <span
+                    class="catalog__contry-item bel"
+                    data-path="five"
+                  ></span>
+                </li>
+              </ul>
+            </div>
+            <p class="catalog__description">
+              Акционеры крупнейших компаний, которые представляют собой яркий
+              пример континентально-европейского типа политической культуры,
+              будут объявлены нарушающими общечеловеческие нормы этики и морали.
+              Являясь всего лишь частью общей картины, стремящиеся вытеснить
+              традиционное производство, нанотехнологии и по сей день остаются
+              уделом либералов, которые жаждут быть функционально разнесены на
+              независимые элементы.
+            </p>
+
+            <div class="catalog__story">
+              <div class="catalog__story-country">
+                <div
+                  class="catalog__story-fr catalog__story-countrys"
+                  data-target="one"
+                  data-emit1="twelve"
+                >
+                  <img
+                    src="img/french.jpeg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name"
+                      >Французский Гирландайо</span
+                    >
+                    <span class="catalog__story-data"
+                      >2 июня 1448 — 11 января 1494.</span
+                    >
+                    <p class="catalog__story-description">
+                      Один из ведущих флорентийских художников Кватроченто,
+                      основатель художественной династии, которую продолжили его
+                      брат Давид и сын Ридольфо. Глава художественной
+                      мастерской, где юный Микеланджело в течение года овладевал
+                      профессиональными навыками. Автор фресковых циклов, в
+                      которых выпукло, со всевозможными подробностями показана
+                      домашняя жизнь библейских персонажей (в их роли выступают
+                      знатные граждане Флоренции в костюмах того времени).
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-ger catalog__story-countrys"
+                  data-target="two"
+                  data-emit2="twelve"
+                >
+                  <img
+                    src="img/Германия.jpeg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name"
+                      >Немецский Гирландайо</span
+                    >
+                    <span class="catalog__story-data"
+                      >2 июня 1448 — 11 января 1494.</span
+                    >
+                    <p class="catalog__story-description">
+                      Один из ведущих флорентийских художников Кватроченто,
+                      основатель художественной династии, которую продолжили его
+                      брат Давид и сын Ридольфо. Глава художественной
+                      мастерской, где юный Микеланджело в течение года овладевал
+                      профессиональными навыками. Автор фресковых циклов, в
+                      которых выпукло, со всевозможными подробностями показана
+                      домашняя жизнь библейских персонажей (в их роли выступают
+                      знатные граждане Флоренции в костюмах того времени).
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-it catalog__story-countrys catalog__story-countrys-active"
+                  data-target="three"
+                  data-emit3="twelve"
+                >
+                  <img
+                    src="img/info1.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Доменико Гирландайо</span>
+                    <span class="catalog__story-data"
+                      >2 июня 1448 — 11 января 1494.</span
+                    >
+                    <p class="catalog__story-description">
+                      Один из ведущих флорентийских художников Кватроченто,
+                      основатель художественной династии, которую продолжили его
+                      брат Давид и сын Ридольфо. Глава художественной
+                      мастерской, где юный Микеланджело в течение года овладевал
+                      профессиональными навыками. Автор фресковых циклов, в
+                      которых выпукло, со всевозможными подробностями показана
+                      домашняя жизнь библейских персонажей (в их роли выступают
+                      знатные граждане Флоренции в костюмах того времени).
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="catalog__story-rus catalog__story-countrys"
+                  data-target="four"
+                  data-emit4="twelve"
+                >
+                  <img
+                    src="img/Россия.jpeg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name"
+                      >Росийский Гирландайо</span
+                    >
+                    <span class="catalog__story-data"
+                      >2 июня 1448 — 11 января 1494.</span
+                    >
+                    <p class="catalog__story-description">
+                      Один из ведущих флорентийских художников Кватроченто,
+                      основатель художественной династии, которую продолжили его
+                      брат Давид и сын Ридольфо. Глава художественной
+                      мастерской, где юный Микеланджело в течение года овладевал
+                      профессиональными навыками. Автор фресковых циклов, в
+                      которых выпукло, со всевозможными подробностями показана
+                      домашняя жизнь библейских персонажей (в их роли выступают
+                      знатные граждане Флоренции в костюмах того времени).
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="catalog__story-bel catalog__story-countrys"
+                  data-target="five"
+                  data-emit5="twelve"
+                >
+                  <img
+                    src="img/Бельгия.jpeg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name"
+                      >Бельгийский Гирландайо</span
+                    >
+                    <span class="catalog__story-data"
+                      >2 июня 1448 — 11 января 1494.</span
+                    >
+                    <p class="catalog__story-description">
+                      Один из ведущих флорентийских художников Кватроченто,
+                      основатель художественной династии, которую продолжили его
+                      брат Давид и сын Ридольфо. Глава художественной
+                      мастерской, где юный Микеланджело в течение года овладевал
+                      профессиональными навыками. Автор фресковых циклов, в
+                      которых выпукло, со всевозможными подробностями показана
+                      домашняя жизнь библейских персонажей (в их роли выступают
+                      знатные граждане Флоренции в костюмах того времени).
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="one"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="two"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="three"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="four"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="five"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="six"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="seven"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="eigth"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="nine"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="ten"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="eleven"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="thirteen"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="fourteen"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="fiveteen"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="sixteen"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="seventeen"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="eighteen"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="nineteen"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="twenty"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="twentyone"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="twentytwo"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="twentythree"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="catalog__story-empty catalog__story-countrys"
+                  data-emit="twentyfour"
+                >
+                  <img
+                    src="img/Frame 33.jpg"
+                    alt="Доменико Гирландайо"
+                    class="catalog__story-img"
+                  />
+                  <div class="catalog__story-information">
+                    <span class="catalog__story-name">Что мы о нём знаем?</span>
+                    <p class="catalog__story-description">
+                      Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!
+                    </p>
+                    <a
+                      href=""
+                      class="catalog__story-galery catalog__story-item-deslink"
+                      >В галерею</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__story-datalist">
+                <ul id="accordion" class="catalog__story-list" data-dat="one">
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-namelist">
+                      <ul class="catalog__story-item-namelist1">
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="one"
+                          >
+                            Бенедетто ди Биндо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="two"
+                          >
+                            Бергоньоне, Амброджо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="three"
+                          >
+                            Биссоло, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="four"
+                          >
+                            Больтраффио, Джованни
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="five"
+                          >
+                            Бонсиньори, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="six"
+                          >
+                            Боттичини, Рафаэлло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="seven"
+                          >
+                            Брамантино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="eight"
+                          >
+                            Бреа, Людовико
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="nine"
+                          >
+                            Бьяджо д’Антонио Туччи
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="ten"
+                          >
+                            Веккьетта
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="eleven"
+                          >
+                            Андреа Верроккьо
+                          </button>
+                          <button
+                            class="catalog__story-item-names catalog__story-item-purple"
+                            data-name="twelve"
+                            data-puro="one"
+                          >
+                            Французский Гирландайо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="thirteen"
+                          >
+                            Беноццо Гоццоли
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="fourteen"
+                          >
+                            Граначчи, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="fiveteen"
+                          >
+                            Грегорио ди Чекко
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="sixteen"
+                          >
+                            Джованни да Удине
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="seventeen"
+                          >
+                            Джованни ди Паоло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="eighteen"
+                          >
+                            Джорджоне
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="nineteen"
+                          >
+                            Парентино, Бернардо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="twenty"
+                          >
+                            Пезеллино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="twentyone"
+                          >
+                            Пьетро Перуджино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="twentytwo"
+                          >
+                            Перуцци, Бальдассаре
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="twentythree"
+                          >
+                            Пизанелло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-name="twentyfour"
+                          >
+                            Пинтуриккьо
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1500 по 1599 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1600 по 1699 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1700 по 1799 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1800 по 1899 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data">C 2000 г.</a>
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul id="accordion1" class="catalog__story-list" data-dat="two">
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-namelist">
+                      <ul class="catalog__story-item-namelist1">
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="one"
+                          >
+                            Бенедетто ди Биндо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="two"
+                          >
+                            Бергоньоне, Амброджо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="three"
+                          >
+                            Биссоло, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="four"
+                          >
+                            Больтраффио, Джованни
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="five"
+                          >
+                            Бонсиньори, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="six"
+                          >
+                            Боттичини, Рафаэлло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="seven"
+                          >
+                            Брамантино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="eight"
+                          >
+                            Бреа, Людовико
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="nine"
+                          >
+                            Бьяджо д’Антонио Туччи
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="ten"
+                          >
+                            Веккьетта
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="eleven"
+                          >
+                            Андреа Верроккьо
+                          </button>
+                          <button
+                            class="catalog__story-item-names catalog__story-item-purple"
+                            data-lame="twelve"
+                            data-pur2="two"
+                          >
+                            Немецкий Гирландайо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="thirteen"
+                          >
+                            Беноццо Гоццоли
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="fourteen"
+                          >
+                            Граначчи, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="fiveteen"
+                          >
+                            Грегорио ди Чекко
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="sixteen"
+                          >
+                            Джованни да Удине
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="seventeen"
+                          >
+                            Джованни ди Паоло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="eighteen"
+                          >
+                            Джорджоне
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="nineteen"
+                          >
+                            Парентино, Бернардо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="twenty"
+                          >
+                            Пезеллино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="twentyone"
+                          >
+                            Пьетро Перуджино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="twentytwo"
+                          >
+                            Перуцци, Бальдассаре
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="twentythree"
+                          >
+                            Пизанелло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-lame="twentyfour"
+                          >
+                            Пинтуриккьо
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1500 по 1599 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1600 по 1699 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1700 по 1799 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1800 по 1899 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data">C 2000 г.</a>
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul
+                  id="accordion2"
+                  class="catalog__story-list catalog__story-list-active"
+                  data-dat="three"
+                >
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-namelist">
+                      <ul class="catalog__story-item-namelist1">
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="one"
+                          >
+                            Бенедетто ди Биндо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="two"
+                          >
+                            Бергоньоне, Амброджо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="three"
+                          >
+                            Биссоло, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="four"
+                          >
+                            Больтраффио, Джованни
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="five"
+                          >
+                            Бонсиньори, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="six"
+                          >
+                            Боттичини, Рафаэлло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="seven"
+                          >
+                            Брамантино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="eight"
+                          >
+                            Бреа, Людовико
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="nine"
+                          >
+                            Бьяджо д’Антонио Туччи
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="ten"
+                          >
+                            Веккьетта
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="eleven"
+                          >
+                            Андреа Верроккьо
+                          </button>
+                          <button
+                            class="catalog__story-item-names catalog__story-item-purple"
+                            data-it="twelve"
+                            data-pur3="three"
+                          >
+                            Доменико Гирландайо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="thirteen"
+                          >
+                            Беноццо Гоццоли
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="fourteen"
+                          >
+                            Граначчи, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="fiveteen"
+                          >
+                            Грегорио ди Чекко
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="sixteen"
+                          >
+                            Джованни да Удине
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="seventeen"
+                          >
+                            Джованни ди Паоло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="eighteen"
+                          >
+                            Джорджоне
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="nineteen"
+                          >
+                            Парентино, Бернардо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="twenty"
+                          >
+                            Пезеллино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="twentyone"
+                          >
+                            Пьетро Перуджино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="twentytwo"
+                          >
+                            Перуцци, Бальдассаре
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="twentythree"
+                          >
+                            Пизанелло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-it="twentyfour"
+                          >
+                            Пинтуриккьо
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1500 по 1599 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1600 по 1699 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1700 по 1799 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1800 по 1899 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data">C 2000 г.</a>
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul id="accordion3" class="catalog__story-list" data-dat="four">
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-namelist">
+                      <ul class="catalog__story-item-namelist1">
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="one"
+                          >
+                            Бенедетто ди Биндо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="two"
+                          >
+                            Бергоньоне, Амброджо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="three"
+                          >
+                            Биссоло, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="four"
+                          >
+                            Больтраффио, Джованни
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="five"
+                          >
+                            Бонсиньори, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="six"
+                          >
+                            Боттичини, Рафаэлло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="seven"
+                          >
+                            Брамантино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="eight"
+                          >
+                            Бреа, Людовико
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="nine"
+                          >
+                            Бьяджо д’Антонио Туччи
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="ten"
+                          >
+                            Веккьетта
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="eleven"
+                          >
+                            Андреа Верроккьо
+                          </button>
+                          <button
+                            class="catalog__story-item-names catalog__story-item-purple"
+                            data-ru="twelve"
+                            data-pur4="four"
+                          >
+                            Росийский Гирландайо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="thirteen"
+                          >
+                            Беноццо Гоццоли
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="fourteen"
+                          >
+                            Граначчи, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="fiveteen"
+                          >
+                            Грегорио ди Чекко
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="sixteen"
+                          >
+                            Джованни да Удине
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="seventeen"
+                          >
+                            Джованни ди Паоло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="eighteen"
+                          >
+                            Джорджоне
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="nineteen"
+                          >
+                            Парентино, Бернардо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="twenty"
+                          >
+                            Пезеллино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="twentyone"
+                          >
+                            Пьетро Перуджино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="twentytwo"
+                          >
+                            Перуцци, Бальдассаре
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="twentythree"
+                          >
+                            Пизанелло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-ru="twentyfour"
+                          >
+                            Пинтуриккьо
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1500 по 1599 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1600 по 1699 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1700 по 1799 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1800 по 1899 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data">C 2000 г.</a>
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul id="accordion4" class="catalog__story-list" data-dat="five">
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-namelist">
+                      <ul class="catalog__story-item-namelist1">
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="one"
+                          >
+                            Бенедетто ди Биндо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="two"
+                          >
+                            Бергоньоне, Амброджо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="three"
+                          >
+                            Биссоло, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="four"
+                          >
+                            Больтраффио, Джованни
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="five"
+                          >
+                            Бонсиньори, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="six"
+                          >
+                            Боттичини, Рафаэлло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="seven"
+                          >
+                            Брамантино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="eight"
+                          >
+                            Бреа, Людовико
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="nine"
+                          >
+                            Бьяджо д’Антонио Туччи
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="ten"
+                          >
+                            Веккьетта
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="eleven"
+                          >
+                            Андреа Верроккьо
+                          </button>
+                          <button
+                            class="catalog__story-item-names catalog__story-item-purple"
+                            data-bel="twelve"
+                            data-pur5="five"
+                          >
+                            Бельгийский Гирландайо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="thirteen"
+                          >
+                            Беноццо Гоццоли
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="fourteen"
+                          >
+                            Граначчи, Франческо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="fiveteen"
+                          >
+                            Грегорио ди Чекко
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="sixteen"
+                          >
+                            Джованни да Удине
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="seventeen"
+                          >
+                            Джованни ди Паоло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="eighteen"
+                          >
+                            Джорджоне
+                          </button>
+                        </li>
+                        <li class="catalog__story-item-nameitem">
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="nineteen"
+                          >
+                            Парентино, Бернардо
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="twenty"
+                          >
+                            Пезеллино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="twentyone"
+                          >
+                            Пьетро Перуджино
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="twentytwo"
+                          >
+                            Перуцци, Бальдассаре
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="twentythree"
+                          >
+                            Пизанелло
+                          </button>
+                          <button
+                            class="catalog__story-item-names"
+                            data-bel="twentyfour"
+                          >
+                            Пинтуриккьо
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1500 по 1599 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1600 по 1699 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1700 по 1799 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1800 по 1899 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data"
+                      >C 1400 по 1499 гг.</a
+                    >
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__story-item">
+                    <a href="" class="catalog__story-item-data">C 2000 г.</a>
+                    <div class="catalog__story-item-boxlist">
+                      <span class="catalog__story-item-box"></span>
+                      <div class="catalog__story-item-boxlist-right">
+                        <h5 class="catalog__story-item-into">
+                          Здесь пока пусто
+                        </h5>
+                        <p class="catalog__story-item-description">
+                          А в галерее вы всегда можете найти что-то интересное
+                          для себя
+                        </p>
+                        <a href="" class="catalog__story-item-deslink"
+                          >В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-dev">
+        <div class="dev-container container">
+          <h3 class="dev__header">События</h3>
+          <ul class="dev__cards">
+            <li class="dev__cards-item">
+              <div class="dev__card">
+                <img
+                  src="img/Rectangle 401.jpg"
+                  alt=""
+                  class="dev__card-img img-one"
+                />
+                <div class="dev__card-bot">
+                  <div class="dev__card-bot-top">
+                    <div class="dev__card-names">
+                      <span class="dev__card-name">Музей им. Щусева</span>
+                      <span class="dev__card-name"
+                        >с 20 марта по 30 апреля</span
+                      >
+                    </div>
+                    <h4 class="dev__card-header">
+                      Книжная гравюра в живом восприятии
+                    </h4>
+                    <p class="dev__card-description">
+                      Один из ведущих флорентийских художников Кватроченто,
+                      основатель художественной династии, которую продолжили его
+                      брат Давид и сын Ридольфо.
+                    </p>
+                  </div>
+                  <a href="" class="dev__card-link">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="dev__cards-item">
+              <div class="dev__card">
+                <img
+                  src="img/Rectangle 402.jpg"
+                  alt=""
+                  class="dev__card-img img-two"
+                />
+                <div class="dev__card-bot">
+                  <div class="dev__card-bot-top">
+                    <div class="dev__card-names">
+                      <span class="dev__card-name">ММОМА</span>
+                      <span class="dev__card-name">24 марта 19:00</span>
+                    </div>
+                    <h4 class="dev__card-header">
+                      «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                    </h4>
+                    <p class="dev__card-description">
+                      Высокий уровень вовлечения представителей целевой
+                      аудитории является четким доказательством простого факта.
+                    </p>
+                  </div>
+                  <a href="" class="dev__card-link">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="dev__cards-item">
+              <div class="dev__card">
+                <img
+                  src="img/Rectangle 403.jpg"
+                  alt=""
+                  class="dev__card-img img-three"
+                />
+                <div class="dev__card-bot">
+                  <div class="dev__card-bot-top">
+                    <div class="dev__card-names">
+                      <span class="dev__card-name">Еврейский музей</span>
+                      <span class="dev__card-name"
+                        >с 31 марта по 21 апреля</span
+                      >
+                    </div>
+                    <h4 class="dev__card-header">Выставка «Формация 2020»</h4>
+                    <p class="dev__card-description">
+                      Идейные соображения высшего порядка, а также современная
+                      методология разработки играет важную роль в формировании
+                      глубокомысленных рассуждений.
+                    </p>
+                  </div>
+                  <a href="" class="dev__card-link">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="dev__cards-item hidden">
+              <div class="dev__card">
+                <img
+                  src="img/vsesobdel.jpg"
+                  alt=""
+                  class="dev__card-img img-one"
+                />
+                <div class="dev__card-bot">
+                  <div class="dev__card-bot-top">
+                    <div class="dev__card-names">
+                      <span class="dev__card-name"
+                        >Третьяковка на Крымском валу
+                      </span>
+                      <span class="dev__card-name"
+                        >с 30 марта по 30 апреля</span
+                      >
+                    </div>
+                    <h4 class="dev__card-header">
+                      XXIV Международная биеннале молодого искусства
+                    </h4>
+                    <p class="dev__card-description">
+                      Внезапно, реплицированные с зарубежных источников,
+                      современные исследования.
+                    </p>
+                  </div>
+                  <a href="" class="dev__card-link">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="dev__cards-item hidden">
+              <div class="dev__card">
+                <img
+                  src="img/vsesobdev2.jpg"
+                  alt=""
+                  class="dev__card-img img-one"
+                />
+                <div class="dev__card-bot">
+                  <div class="dev__card-bot-top">
+                    <div class="dev__card-names">
+                      <span class="dev__card-name">ММАМ </span>
+                      <span class="dev__card-name">с 8 апреля по 20 мая</span>
+                    </div>
+                    <h4 class="dev__card-header">
+                      Джон Винзор. Фотографии из серии «Метафора серебра»
+                    </h4>
+                    <p class="dev__card-description">
+                      Один из ведущих флорентийских художников Кватроченто,
+                      основатель художественной династии, которую продолжили его
+                      брат Давид и сын Ридольфо.
+                    </p>
+                  </div>
+                  <a href="" class="dev__card-link">Подробнее</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="dev__btn btn1 btn">Все события</button>
+          <button class="dev__btn btn2 btn">Свернуть</button>
+        </div>
+      </section>
+      <section class="section-izdan">
+        <div class="izdan-container container">
+          <div class="izdan__left">
+            <h3 class="izdan__header">Издания</h3>
+            <h4 class="izdan__item-category">Категории</h4>
+            <ul class="izdan__list">
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check1"
+                />
+                <label for="check1" class="izdan__item-label">
+                  Бестселлеры</label
+                >
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check2"
+                />
+                <label for="check2" class="izdan__item-label"> Искусство</label>
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check3"
+                />
+                <label for="check3" class="izdan__item-label">
+                  Архитектура</label
+                >
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check4"
+                />
+                <label for="check4" class="izdan__item-label"> Дизайн</label>
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check5"
+                />
+                <label for="check5" class="izdan__item-label"> Мода</label>
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check6"
+                />
+                <label for="check6" class="izdan__item-label"> Детям</label>
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check7"
+                />
+                <label for="check7" class="izdan__item-label">
+                  Художественная литература</label
+                >
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check8"
+                />
+                <label for="check8" class="izdan__item-label">
+                  Публицистика</label
+                >
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check9"
+                />
+                <label for="check9" class="izdan__item-label">
+                  Путеводители</label
+                >
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check10"
+                />
+                <label for="check10" class="izdan__item-label">
+                  Философия</label
+                >
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check11"
+                />
+                <label for="check11" class="izdan__item-label">
+                  Учебная литература</label
+                >
+              </li>
+              <li class="izdan__item">
+                <input
+                  type="checkbox"
+                  name="check"
+                  class="izdan__item-checkbox"
+                  id="check12"
+                />
+                <label for="check12" class="izdan__item-label">
+                  Журналы и газеты</label
+                >
+              </li>
+            </ul>
+            <h4 class="izdan__item-price">Цена</h4>
+            <div class="izdan__scale">
+              <span class="izdan__scale-fbp">от</span>
+              <input
+                type="number"
+                placeholder="50"
+                name="minprice"
+                min="50"
+                max="25000"
+                class="izdan__scale-infrom"
+              />
+              <span class="izdan__scale-fbp">до</span>
+              <input
+                type="number"
+                placeholder="25000"
+                name="maxprice"
+                min="50"
+                max="25000"
+                class="izdan__scale-infrom"
+              />
+              <span class="izdan__scale-fbp">руб.</span>
+            </div>
+          </div>
+          <div class="izdan__right">
+            <div class="izdan-btns">
+              <!-- If we need navigation buttons -->
+              <button class="izdan-button-prev">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                    fill="#666666"
+                  />
+                  <path d="M16 20L11 15L16 10" stroke="white" />
+                </svg>
+              </button>
+              <div class="izdan-pagination"></div>
+              <button class="izdan-button-next">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                    fill="#666666"
+                  />
+                  <path d="M14 20L19 15L14 10" stroke="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="izdan__swiper izdan-swiper swiper">
+              <ul class="swiper-wrapper izdan-swiper__wrapper">
+                <!-- Slides -->
+                <li class="swiper-slide izdan-swiper__slide">
+                  <div class="izdan-swiper__body">
+                    <div class="izdan-swiper__img">
+                      <img src="img/Rectangle 111.jpg" alt="первый" />
+                    </div>
+                    <div class="izdan-swiper__desc">
+                      <div class="izdan-swiper__desc-top">
+                        <h3 class="izdan-swiper__title">
+                          Искусство цвета <span>Иттен, Иоханнес</span>
+                        </h3>
+                        <span class="izdan-swiper__price">620 руб</span>
+                      </div>
+                      <a class="izdan-swiper__link">Заказать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide izdan-swiper__slide">
+                  <div class="izdan-swiper__body">
+                    <div class="izdan-swiper__img">
+                      <img src="img/Rectangle 112.jpg" alt="первый" />
+                    </div>
+                    <div class="izdan-swiper__desc">
+                      <div class="izdan-swiper__desc-top">
+                        <h3 class="izdan-swiper__title">
+                          Типографика
+                          <span>Рудер, Эмиль</span>
+                        </h3>
+                        <span class="izdan-swiper__price">2450 руб</span>
+                      </div>
+                      <a class="izdan-swiper__link">Заказать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide izdan-swiper__slide">
+                  <div class="izdan-swiper__body">
+                    <div class="izdan-swiper__img">
+                      <img src="img/Rectangle 113.jpg" alt="первый" />
+                    </div>
+                    <div class="izdan-swiper__desc">
+                      <div class="izdan-swiper__desc-top">
+                        <h3 class="izdan-swiper__title">
+                          Книга про буквы
+                          <span>Гордон, Юрий</span>
+                        </h3>
+                        <span class="izdan-swiper__price">2200 руб</span>
+                      </div>
+                      <a class="izdan-swiper__link">Заказать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide izdan-swiper__slide">
+                  <div class="izdan-swiper__body">
+                    <div class="izdan-swiper__img">
+                      <img src="img/Rectangle 114.jpg" alt="первый" />
+                    </div>
+                    <div class="izdan-swiper__desc">
+                      <div class="izdan-swiper__desc-top">
+                        <h3 class="izdan-swiper__title">
+                          Николай Ильин
+                          <span>Кричевский, Владимир</span>
+                        </h3>
+                        <span class="izdan-swiper__price">1100 руб</span>
+                      </div>
+                      <a class="izdan-swiper__link">Заказать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide izdan-swiper__slide">
+                  <div class="izdan-swiper__body">
+                    <div class="izdan-swiper__img">
+                      <img src="img/Rectangle 115.jpg" alt="первый" />
+                    </div>
+                    <div class="izdan-swiper__desc">
+                      <div class="izdan-swiper__desc-top">
+                        <h3 class="izdan-swiper__title">
+                          Модульные сетки в граф...
+                          <span>Мюллер-Брокманн, Йозеф</span>
+                        </h3>
+                        <span class="izdan-swiper__price">1450 руб</span>
+                      </div>
+                      <a class="izdan-swiper__link">Заказать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide izdan-swiper__slide">
+                  <div class="izdan-swiper__body">
+                    <div class="izdan-swiper__img">
+                      <img src="img/Rectangle 116.jpg" alt="первый" />
+                    </div>
+                    <div class="izdan-swiper__desc">
+                      <div class="izdan-swiper__desc-top">
+                        <h3 class="izdan-swiper__title">
+                          Эволюция графических ст...
+                          <span>Хеллер, Чваст</span>
+                        </h3>
+                        <span class="izdan-swiper__price">3200 руб</span>
+                      </div>
+                      <a class="izdan-swiper__link">Заказать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide izdan-swiper__slide">
+                  <div class="izdan-swiper__body">
+                    <div class="izdan-swiper__img">
+                      <img src="img/Rectangle 117.jpg" alt="первый" />
+                    </div>
+                    <div class="izdan-swiper__desc">
+                      <div class="izdan-swiper__desc-top">
+                        <h3 class="izdan-swiper__title">
+                          Искусство и визуальное в...
+                          <span>Арнхейм, Рудольф</span>
+                        </h3>
+                        <span class="izdan-swiper__price">2200 руб</span>
+                      </div>
+                      <a class="izdan-swiper__link">Заказать</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="projects__container container">
+          <h3 class="projects__header">Проекты</h3>
+          <p class="projects__description">
+            Предварительные выводы: постоянное информационно-пропагандистское
+            обеспечение нашей деятельности однозначно фиксирует необходимость
+            своевременного выполнения сверхзадачи. А ещё независимые государства
+            смешаны с не уникальными данными до степени совершенной
+            неузнаваемости, из-за чего возрастает их статус бесполезности.
+            Прежде всего, постоянное информационно-пропагандистское
+            <span class="projects__description-tabintool">
+              <span class="projects__description-tooltip" tabindex="0"> </span
+              ><span
+                class="projects__description-tooldess projects__description-tooldes"
+              >
+                Пример современных тенденций - современная методология
+                разработки
+              </span>
+            </span>
+            обеспечение нашей деятельности однозначно фиксирует необходимость
+            экономической целесообразности принимаемых решений. И нет сомнений,
+            что действия представителей оппозиции могут быть рассмотрены
+            <span class="projects__description-tabintool">
+              <span class="projects__description-tooltip" tabindex="0"> </span
+              ><span
+                class="projects__description-tooldess projects__description-tooldes1"
+              >
+                Приятно, граждане, наблюдать, как сделанные на базе аналитики
+                выводы вызывают у вас эмоции
+              </span>
+            </span>
+            исключительно в разрезе маркетинговых и финансовых
+            <span class="projects__description-tabintool">
+              <span class="projects__description-tooltip" tabindex="0"> </span
+              ><span
+                class="projects__description-tooldess projects__description-tooldes2"
+              >
+                В стремлении повысить качество
+              </span>
+            </span>
+            предпосылок. Банальные, но неопровержимые выводы, а также
+            представители современных социальных резервов призывают нас к новым
+            свершениям, которые, в свою очередь, должны быть смешаны с не
+            уникальными данными до степени совершенной неузнаваемости.
+            Подробнее: <a>blanchard-art.ru/projects/about</a>
+          </p>
+          <h4 class="projects__frheader">Партнёры проектов:</h4>
+
+          <div class="projects__friends">
+            <!-- If we need navigation buttons -->
+            <button class="projects-button-prev">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
+                  fill="#ECECEC"
+                />
+                <path d="M16 20L11 15L16 10" stroke="black" />
+              </svg>
+            </button>
+            <div class="projects__swiper projects-swiper swiper">
+              <ul class="swiper-wrapper projects-swiper__wrapper">
+                <!-- Slides -->
+                <li class="swiper-slide projects-swiper__slide">
+                  <img src="img/1 931.png" alt="" />
+                </li>
+                <li class="swiper-slide projects-swiper__slide">
+                  <img src="img/1932.png" alt="" />
+                </li>
+                <li class="swiper-slide projects-swiper__slide">
+                  <img src="img/1933.png" alt="" />
+                </li>
+                <li class="swiper-slide projects-swiper__slide">
+                  <img src="img/1934.png" alt="" />
+                </li>
+                <li class="swiper-slide projects-swiper__slide">
+                  <img src="img/1935.png" alt="" />
+                </li>
+                <li class="swiper-slide projects-swiper__slide">
+                  <img src="img/1936.png" alt="" />
+                </li>
+                <li class="swiper-slide projects-swiper__slide">
+                  <img src="img/1937.png" alt="" />
+                </li>
+                <li class="swiper-slide projects-swiper__slide">
+                  <img src="img/1938.png" alt="" />
+                </li>
+                <li class="swiper-slide projects-swiper__slide">
+                  <img src="img/1939.png" alt="" />
+                </li>
+              </ul>
+            </div>
+            <button class="projects-button-next">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
+                  fill="#ECECEC"
+                />
+                <path d="M14 20L19 15L14 10" stroke="#000" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__container container">
+          <h3 class="contacts__header">Контакты</h3>
+          <div class="contacts__top">
+            <div class="contacts__left">
+              <address class="contacts__showroom">
+                <span>Шоурум №4</span>
+                Леонтьевский переулок, дом 5/1
+              </address>
+              <h3 class="contacts-left__header">Заказать обратный звонок</h3>
+              <form
+                action="mail.php"
+                class="contacts-form"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <input
+                  type="hidden"
+                  name="admin_email[]"
+                  value="norikas95@mail.ru"
+                />
+                <input
+                  type="hidden"
+                  name="form_subject"
+                  value="Заявка с сайта"
+                />
+                <label class="contacts__label"
+                  ><input
+                    type="text"
+                    name="name"
+                    placeholder="Имя*"
+                    required
+                    data-validate-field="name"
+                    id="name"
+                    aria-label="Введите своё имя"
+                    class="contacts-form__input"
+                /></label>
+                <label class="contacts__label"
+                  ><input
+                    class="contacts-form__input"
+                    type="tel"
+                    name="phone"
+                    placeholder="Телефон*"
+                    required
+                    data-validate-field="tel"
+                    data-validate-rules="phone"
+                    id="tel"
+                    aria-label="Введите свой телефон"
+                /></label>
+                <button class="contacts-form__btn" type="submit">
+                  Заказать
+                </button>
+              </form>
+
+              <div class="contsacts-social__block">
+                <h4 class="socials-block__heading">Связаться в один клик</h4>
+                <ul class="social-block__list">
+                  <li class="social-block__item whatsapp">
+                    <a href="" class="social-block__link whatsapp"></a>
+                  </li>
+                  <li class="social-block__item telega">
+                    <a href="" class="social-block__link telega"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contacts__right">
+              <div
+                id="map"
+                class="contacts__apiya"
+                ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="popup" data-pop="one">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="two">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="three">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="four">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="five">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="six">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="seven">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="eight">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="nine">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="ten">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="eleven">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="twelve">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="therteen">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="fourteen">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="fiveteen">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="sixteen">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="seventeen">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="eighteen">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="nineteen">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="twenty">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="twentyone">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="twentytwo">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="twentythree">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="popup" data-pop="twentyfour">
+      <div class="popup-close"></div>
+      <div class="popup-body">
+        <div class="popup__left">
+          <img src="img/gal1.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <h3 class="popup__right-heading">Казимир Малевич</h3>
+          <span class="popup__right-sp1">“Крестьянин в поле”</span>
+          <span class="popup__right-sp2">1928–1929</span>
+
+          <p class="popup__right-desc" data-simplebar="init">
+            Супрематизм полностью завоевал эту картину, сочетаясь с
+            натурализмом. Предметность присутствует на данной картине, так как
+            есть конкретная тема, существует также перспектива в виде полей,
+            изображенных четкими прямоугольниками разного цвета, отличного от
+            натуральных цветов природы – черные, белые, красные, синие,
+            желтые.Фигура крестьянина выполнена из геометрических фигур
+            правильной формы. Условность изображения передает стойкое желание
+            автора объединить выбранные им Супрематизм полностью завоевал эту
+            картину, сочетаясь с натурализмом. Предметность присутствует на
+            данной картине, так как есть конкретная тема, существует также
+            перспектива в виде полей, изображенных четкими прямоугольниками
+            разного цвета, отличного от натуральных цветов природы – черные,
+            белые, красные, синие, желтые.Фигура крестьянина выполнена из
+            геометрических фигур правильной формы. Условность изображения
+            передает стойкое желание автора объединить выбранные им
+          </p>
+          <button class="popup__btn"></button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <a href="" class="footer__logo"></a>
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a href="" class="footer-social__link vk"></a>
+          </li>
+          <li class="footer-social__item">
+            <a href="" class="footer-social__link inst"></a>
+          </li>
+          <li class="footer-social__item">
+            <a href="" class="footer-social__link fb"></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/choices.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
